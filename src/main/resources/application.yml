@@ -1,0 +1,17 @@
+server:
+  url:  http://192.168.131.207
+  port: 8085
+
+db:
+  neo4j:
+    driver: org.neo4j.ogm.drivers.bolt.driver.BoltDriver
+    user: neo4j
+    password: 123456
+    dbPath: D:\programFiles\DevEnv\neo4j-community-3.5.26\data
+    server:
+#      uri: bolt://192.168.0.106:7687
+#      uri: bolt://192.168.131.205:7687
+      uri: bolt://localhost:7687
+    connection:
+      poll:
+        size: 10
